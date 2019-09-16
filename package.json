@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --config=webpack.config.js --display=verbose --color --progress --watch --hot --profile",
-    "build:dist": "rimraf ./dist & webpack --config=webpack.config.js --mode=production"
+    "build": "npm run build:dist && ts-node ./scripts/copy-package.ts",
+    "build:dist": "rimraf ./dist & webpack --config=webpack.config.js --mode=production",
+    "publish": "npm publish ./dist"
   },
   "keywords": [
     "react",
@@ -18,6 +20,9 @@
   "devDependencies": {
     "@babel/core": "^7.6.0",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/cli": "^7.6.0",
+    "@babel/node": "^7.6.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
     "@hot-loader/react-dom": "^16.9.0",
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
@@ -31,24 +36,24 @@
     "eslint": "^6.4.0",
     "eslint-config-prettier": "^6.3.0",
     "eslint-loader": "^3.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
     "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.12.0",
     "prettier": "^1.18.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
     "react-hot-loader": "^4.12.13",
     "rimraf": "^3.0.0",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
+    "ts-node": "^8.4.1",
     "typescript": "^3.6.3",
     "typescript-eslint-parser": "^22.0.0",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.8",
     "webpack-dev-server": "^3.8.0"
   },
-  "dependencies": {
-    "@babel/cli": "^7.6.0",
-    "@babel/node": "^7.6.1",
-    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
-    "eslint-plugin-prettier": "^3.1.0",
+  "peerDependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   }
