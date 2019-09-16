@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --config=webpack.config.js --display=verbose --color --progress --watch --hot --profile"
+    "dev": "webpack-dev-server --config=webpack.config.js --display=verbose --color --progress --watch --hot --profile",
+    "build:dist": "rimraf ./dist & webpack --config=webpack.config.js --mode=production"
   },
   "keywords": [
     "react",
@@ -15,17 +16,18 @@
   "author": "pang yaran",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.6.0",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@hot-loader/react-dom": "^16.9.0",
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
     "@typescript-eslint/parser": "^2.2.0",
     "awesome-typescript-loader": "^5.2.1",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.6",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "css-loader": "^3.2.0",
     "eslint": "^6.4.0",
     "eslint-config-prettier": "^6.3.0",
     "eslint-loader": "^3.0.0",
@@ -33,6 +35,7 @@
     "node-sass": "^4.12.0",
     "prettier": "^1.18.2",
     "react-hot-loader": "^4.12.13",
+    "rimraf": "^3.0.0",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
     "typescript": "^3.6.3",
@@ -42,6 +45,8 @@
     "webpack-dev-server": "^3.8.0"
   },
   "dependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/node": "^7.6.1",
     "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
     "eslint-plugin-prettier": "^3.1.0",
     "react": "^16.9.0",
