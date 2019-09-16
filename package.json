@@ -9,7 +9,8 @@
   },
   "keywords": [
     "react",
-    "otp"
+    "otp",
+    "typescript"
   ],
   "author": "pang yaran",
   "license": "MIT",
@@ -29,8 +30,10 @@
     "eslint-config-prettier": "^6.3.0",
     "eslint-loader": "^3.0.0",
     "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.12.0",
     "prettier": "^1.18.2",
     "react-hot-loader": "^4.12.13",
+    "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
     "typescript": "^3.6.3",
     "typescript-eslint-parser": "^22.0.0",

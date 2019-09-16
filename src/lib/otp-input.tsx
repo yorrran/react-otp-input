@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './style.scss';
 
 interface IProps {
   disabled?: boolean;
@@ -47,7 +48,7 @@ const CodeInput = (props: IProps) => {
   };
 
   const focusNextInput = () => {
-    if (activeInput < 3) {
+    if (activeInput < props.codeLength - 1) {
       const nextInput = activeInput + 1;
       focusInput(nextInput);
     }

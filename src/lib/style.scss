@@ -1,0 +1,27 @@
+.code-wrapper {
+  display: flex;
+  justify-content: center;
+
+  .code {
+    height: 0.72rem;
+    width: 0.52rem;
+    border-bottom: 3px solid #aeaeae;
+    color: transparent;
+    text-shadow: 0 0 0 #101010;
+    text-align: center;
+    font-size: 0.7rem;
+    outline: none;
+
+    &.focus {
+      border-bottom: 0.03rem solid #101010;
+    }
+
+    &:not(:last-child) {
+      margin-right: 0.26rem;
+    }
+
+    &::selection {
+      background: none;
+    }
+  }
+}
