@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import OtpInput from '../lib/otp-input';
+import OtpInput from '../src/index';
 
 class Demo extends React.Component {
   render() {

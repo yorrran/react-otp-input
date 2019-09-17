@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --config=webpack.config.js --display=verbose --color --progress --watch --hot --profile",
     "build": "npm run build:dist && ts-node ./scripts/copy-package.ts",
-    "build:dist": "rimraf ./dist & webpack --config=webpack.config.js --mode=production",
+    "build:dist": "rimraf ./dist & ./node_modules/.bin/rollup -c",
     "publish": "npm publish ./dist"
   },
   "keywords": [
@@ -18,10 +18,10 @@
   "author": "pang yaran",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.6.0",
-    "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
     "@babel/node": "^7.6.1",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
     "@hot-loader/react-dom": "^16.9.0",
     "@types/react": "^16.9.2",
@@ -44,6 +44,10 @@
     "react-dom": "^16.9.0",
     "react-hot-loader": "^4.12.13",
     "rimraf": "^3.0.0",
+    "rollup": "^1.21.4",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-scss": "^1.0.2",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
     "ts-node": "^8.4.1",
@@ -56,5 +60,9 @@
   "peerDependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
+  },
+  "dependencies": {
+    "rollup-plugin-typescript": "^1.0.1",
+    "tslib": "^1.10.0"
   }
 }
