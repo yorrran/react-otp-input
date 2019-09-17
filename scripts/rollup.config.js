@@ -15,7 +15,7 @@ export default {
     exports: 'named',
     name: 'codeInput',
   },
-  external: ['react', 'react-dom', { includeDependencies: true }],
+  external: ['react', 'react-dom'],
   plugins: [
     typescript({
       tsconfig: 'tsconfig.json',

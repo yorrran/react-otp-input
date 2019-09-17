@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --config=webpack.config.js --display=verbose --color --progress --watch --hot --profile",
     "build": "npm run build:dist && ts-node ./scripts/copy-package.ts",
-    "build:dist": "rimraf ./dist & ./node_modules/.bin/rollup -c",
+    "build:dist": "rimraf ./dist & rollup -c scripts/rollup.config.js",
     "publish": "npm publish ./dist"
   },
   "keywords": [
@@ -45,12 +45,17 @@
     "react-hot-loader": "^4.12.13",
     "rimraf": "^3.0.0",
     "rollup": "^1.21.4",
+    "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-scss": "^1.0.2",
+    "rollup-plugin-typescript": "^1.0.1",
+    "rollup-plugin-typescript2": "^0.24.2",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
     "ts-node": "^8.4.1",
+    "tslib": "^1.10.0",
     "typescript": "^3.6.3",
     "typescript-eslint-parser": "^22.0.0",
     "webpack": "^4.40.2",
@@ -60,9 +65,5 @@
   "peerDependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
-  },
-  "dependencies": {
-    "rollup-plugin-typescript": "^1.0.1",
-    "tslib": "^1.10.0"
   }
 }
