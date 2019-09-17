@@ -6,11 +6,12 @@ import react from 'react';
 import nodeResolve from 'rollup-plugin-node-resolve';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import babel from 'rollup-plugin-babel';
+import fs from 'fs';
 
 export default {
   input: 'src/index.ts',
   output: {
-    file: 'dist/src/index.js',
+    dir: 'dist',
     format: 'cjs',
     exports: 'named',
     name: 'codeInput',
@@ -31,7 +32,12 @@ export default {
     babel({
       external: 'node_modules/**',
     }),
-    scss(),
+    scss({
+      output: './dist/bundle.css',
+      output: function(styles, styleNodes) {
+        console.log('styles:', styles);
+      },
+    }),
     nodeResolve({
       modulesOnly: true,
     }),
