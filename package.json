@@ -8,6 +8,7 @@
     "dev": "webpack-dev-server --config=webpack.config.js --display=verbose --color --progress --watch --hot --profile",
     "build": "npm run build:dist && ts-node ./scripts/copy-package.ts",
     "build:dist": "rimraf ./dist & rollup -c rollup.config.js",
+    "prepublish": "npm run build",
     "publish": "npm publish ./dist"
   },
   "keywords": [

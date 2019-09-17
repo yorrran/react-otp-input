@@ -8,7 +8,7 @@ class Demo extends React.Component {
       <div>
         <div>demo</div>
         <OtpInput
-          codeLength={4}
+          codeLength={5}
           onInputChange={value => {
             console.log(value);
           }}
