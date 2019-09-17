@@ -1,5 +1,5 @@
 {
-  "name": "react-optinput",
+  "name": "react-otpinput",
   "version": "1.2.0",
   "description": "This is the util library for otp input",
   "main": "index.js",
