@@ -34,9 +34,6 @@ export default {
     }),
     scss ({
       output: './dist/bundle.css',
-      output: function (styles, styleNodes) {
-        console.log ('styles:', styles);
-      },
     }),
     nodeResolve ({
       modulesOnly: true,
