@@ -1,12 +1,13 @@
 {
-  "presets": ["@babel/preset-react", "@babel/preset-env", "react"],
   "plugins": [
     "@babel/plugin-proposal-object-rest-spread",
     "@babel/plugin-proposal-class-properties"
   ],
   "env": {
     "development": {
-      "plugins": ["react-hot-loader/babel"]
+      "plugins": [
+        "react-hot-loader/babel"
+      ]
     }
   }
 }

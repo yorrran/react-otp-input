@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --config=webpack.config.js --display=verbose --color --progress --watch --hot --profile",
     "build": "npm run build:dist && ts-node ./scripts/copy-package.ts",
-    "build:dist": "rimraf ./dist & rollup -c scripts/rollup.config.js",
+    "build:dist": "rimraf ./dist & rollup -c rollup.config.js",
     "publish": "npm publish ./dist"
   },
   "keywords": [
@@ -23,6 +23,8 @@
     "@babel/node": "^7.6.1",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
     "@hot-loader/react-dom": "^16.9.0",
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",

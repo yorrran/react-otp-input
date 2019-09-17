@@ -1,5 +1,5 @@
-import fs from 'fs';
-import path from 'path';
+const fs = require('fs');
+const path = require('path');
 const pkg = require('./../package.json');
 
 delete pkg.scripts;

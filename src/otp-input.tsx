@@ -90,7 +90,7 @@ const CodeInput = (props: IProps) => {
    * target input will get value of length two
    * substring to get single target input
    */
-  const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInput = (e: React.ChangeEvent<any>) => {
     e.preventDefault();
     const { value } = e.target;
     const targetValue =
