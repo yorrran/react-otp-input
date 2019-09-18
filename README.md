@@ -1,5 +1,7 @@
 # React otpinput
 
+[![NPM version]][npmv-image](https://www.npmjs.com/package/react-optinput)
+
 ## Installation
 
 To install the latest version:
