@@ -1,6 +1,6 @@
 {
   "name": "react-optinput",
-  "version": "v0.0.3-beta",
+  "version": "0.0.4-beta",
   "description": "This is the util library for otp input",
   "main": "index.js",
   "repository": "https://github.com/yorrran/react-otp-input",
