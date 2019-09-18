@@ -18,26 +18,26 @@ export default {
   },
   external: ['react', 'react-dom'],
   plugins: [
-    typescript ({
+    typescript({
       tsconfig: 'tsconfig.json',
       objectHashIgnoreUnknownHack: true,
     }),
-    resolve (),
-    commonjs ({
+    resolve(),
+    commonjs({
       namedExports: {
-        'node_modules/react/index.js': Object.keys (react),
+        'node_modules/react/index.js': Object.keys(react),
         'node_modules/react-dom/index.js': ['render'],
       },
     }),
-    babel ({
+    babel({
       external: 'node_modules/**',
     }),
-    scss ({
-      output: './dist/.css',
+    scss({
+      output: './dist/bundle.css',
     }),
-    nodeResolve ({
+    nodeResolve({
       modulesOnly: true,
     }),
-    peerDepsExternal (),
+    peerDepsExternal(),
   ],
 };
