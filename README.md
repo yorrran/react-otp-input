@@ -84,9 +84,9 @@ npm run dev
 ## Checklist
 
 - -[x] Add ESlint, Prettier for code quality \*
-- ###-[ ] Customize style support \*
-- ###-[ ] CI \*
-- ###-[ ] Unit tests \*
+- -[ ] Customize style support \*
+- -[ ] CI \*
+- -[ ] Unit tests \*
 
 ## License
 
