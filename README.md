@@ -1,3 +1,5 @@
+# React otpinput
+
 ## Installation
 
 To install the latest version:
