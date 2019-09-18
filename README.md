@@ -68,7 +68,7 @@ ReactDOM.render(<Demo />, document.getElementById('root'));
   </tr>
 </table>
 
-## First beta v1.1.0
+## First beta v0.0.2-beta
 
 This beta version is created to demostrate implementing otp/code/pin code input with react in a simpler. The demo is created using webpack as building base. The package is packed with rollup. It was initially packed using webpack. During the stage of experiements, rollup shows a clear and simpler manner in module bundler.
 Dev dependencies and peer dependencies are available for reference in react-optinput. You may need peer dependecies react and react-dom for development purpose. Currently, default style is provided with import './bundle.css'.
