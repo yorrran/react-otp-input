@@ -4,7 +4,7 @@ import './style.scss';
 interface IProps {
   disabled?: boolean;
   codeLength: number;
-  onInputChange: (value: string) => void;
+  onInputChange?: (value: string) => void;
 }
 
 const BACKSPACE = 8;
@@ -26,7 +26,7 @@ const CodeInput = (props: IProps) => {
     const newOtp = [...otp];
     newOtp[activeInput] = value;
     setOtp(newOtp);
-    props.onInputChange(newOtp.join(''));
+    props.onInputChange && props.onInputChange(newOtp.join(''));
   };
 
   /**
