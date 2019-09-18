@@ -1,6 +1,6 @@
 # React otpinput
 
-[![npm_version]][npmv-image]][npmv-url]
+[![npm_version][npmv-image]][npmv-url]
 
 ## Installation
 
