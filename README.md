@@ -1,6 +1,6 @@
 # React otpinput
 
-[![NPM version]][npmv-image](https://www.npmjs.com/package/react-optinput)
+[![npm_version]][npmv-image]][npmv-url]
 
 ## Installation
 
@@ -88,3 +88,6 @@ npm run dev
 ## License
 
 MIT
+
+[npmv-image]: https://img.shields.io/npm/v/react-optinput.svg?style=flat-square
+[npmv-url]: https://www.npmjs.com/package/react-optinput
