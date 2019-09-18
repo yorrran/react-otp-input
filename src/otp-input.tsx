@@ -41,17 +41,13 @@ const CodeInput = (props: IProps) => {
   };
 
   const focusPreInput = () => {
-    if (activeInput > 0) {
-      const preInput = activeInput - 1;
-      focusInput(preInput);
-    }
+    const preInput = activeInput - 1;
+    focusInput(preInput);
   };
 
   const focusNextInput = () => {
-    if (activeInput < props.codeLength - 1) {
-      const nextInput = activeInput + 1;
-      focusInput(nextInput);
-    }
+    const nextInput = activeInput + 1;
+    focusInput(nextInput);
   };
 
   /**
