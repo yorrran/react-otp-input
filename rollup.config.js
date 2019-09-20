@@ -33,7 +33,7 @@ export default {
       external: 'node_modules/**',
     }),
     scss ({
-      output: './dist/.css',
+      output: './dist/bundle.css',
     }),
     nodeResolve ({
       modulesOnly: true,
