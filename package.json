@@ -1,8 +1,9 @@
 {
-  "name": "react-otpinput",
-  "version": "1.2.0",
+  "name": "react-optinput",
+  "version": "0.0.7-beta",
   "description": "This is the util library for otp input",
   "main": "index.js",
+  "repository": "https://github.com/yorrran/react-otp-input",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --config=webpack.config.js --display=verbose --color --progress --watch --hot --profile",
